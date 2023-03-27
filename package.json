@@ -1,0 +1,33 @@
+{
+  "name": "social-media-api",
+  "version": "1.0.0",
+  "description": "An API for any social network that uses a NoSQL database.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marksalazr/Social-Media-API.git"
+  },
+  "keywords": [],
+  "author": "Mark Salazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marksalazr/Social-Media-API/issues"
+  },
+  "homepage": "https://github.com/marksalazr/Social-Media-API#readme",
+
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.2"
+},
+"devDependencies": {
+    "nodemon": "^2.0.9"
+}
+  
+}
