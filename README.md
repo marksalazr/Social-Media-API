@@ -17,6 +17,10 @@ An API for any social network that uses a NoSQL database.
   ``PUT /api/users/:userId``
 
   ``DELETE /api/users/:userId``
+  
+## Useage 
+  Use the command ``npm start`` to run the application on the localhost:3001. To see a walkthrough of the application
+  [here](https://drive.google.com/file/d/16Ug3tIcvjjEmZxJpeWops7Bs8T3BQ2pS/view).
   ## Collaborators 
   N/A
 ## Testing 
