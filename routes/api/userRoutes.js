@@ -3,11 +3,11 @@ const {
     addFriend,
     createUser,
     deleteUser,
-    getUser,
+    getSingleUser,
     getUsers,
     removeFriend,
     updateUser,
-} = require ('../../controllers/userController.js');
+} = require ('../../controllers/userControllers.js');
 // /users__vv
 router
     .route('/')
@@ -18,7 +18,7 @@ router
 
 router
   .route('/:userId')
-  .get(getUser)
+  .get(getSingleUser)
   .put(updateUser)
   .delete(deleteUser);
 

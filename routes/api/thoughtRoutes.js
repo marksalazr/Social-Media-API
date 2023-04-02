@@ -4,27 +4,27 @@ const{
     addReaction,
     createThought,
     deleteThought,
-    getThought,
+    getSingleThought,
     getThoughts,
     removeReaction,
     updateThought,
 } =require ('../../controllers/thoughtController');
-
+//// use api/thoughts
 router
     .route('/')
     .get(getThoughts)
     .post(createThought);
-
+// /api/thoughts/:
 router
-    .route('/:thoughtId')
-    .get(getThought)
+    .route('/:thoughtID')
+    .get(getSingleThought)
     .put(updateThought)
     .delete(deleteThought); 
 router
-    .route('/:thoughtId/reactions')
+    .route('/:thoughtID/reactions')
     .post(addReaction);
  router
-    .route('/:thoughtId/reactions/:reactionId')
+    .route('/:thoughtId/reactions/:reactionID')
     .delete(removeReaction);
 
 module.exports = router;
